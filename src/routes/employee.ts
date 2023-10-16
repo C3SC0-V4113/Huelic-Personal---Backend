@@ -1,17 +1,17 @@
 import { Router } from "express";
 
-const routerPerson = Router();
+const routerEmployee = Router();
 
 /**
  * Rutas de Personas / Person
  * host + /api/person
  */
 
-routerPerson.get("/", (req, res) => {
+routerEmployee.get("/", (req, res) => {
   console.log("Se requiere en /");
   res.json({
     ok: true,
   });
 });
 
-export { routerPerson };
+export { routerEmployee };

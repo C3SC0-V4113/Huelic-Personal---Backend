@@ -1,7 +1,7 @@
 import express from "express";
 import "dotenv/config";
 import { routerAuth } from "./routes/auth";
-import { routerPerson } from "./routes/person";
+import { routerEmployee } from "./routes/employee";
 import { dbConnection } from "./database/config";
 
 /** Crear el servidor de express */
@@ -19,7 +19,7 @@ app.use(express.json());
 
 /** Rutas */
 app.use("/api/auth", routerAuth);
-app.use("/api/person", routerPerson);
+app.use("/api/employee", routerEmployee);
 
 /** Escuchar peticiones */
 app.listen(port, () => {
